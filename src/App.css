@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
 .bgImage{
-  display: table;
-  width: 100%;
-  padding: 0;
-  background: url('https://github.com/issaafalkattan/React-Landing-Page-Template/blob/master/public/img/intro-bg.jpg?raw=true') center center no-repeat;
-  background-size: cover;
-  -o-background-size: cover;
+  background-image: url('https://images.pexels.com/photos/891059/pexels-photo-891059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  /* background-repeat: no-repeat; */
 }

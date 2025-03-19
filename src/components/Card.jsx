@@ -1,17 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
-const Card = () => {
-    const [userData, setUserData] = useState([]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-            setUserData(response.data);
-        };
-        fetchData();
-    }, []);
-
+const Card = ({ userData }) => {
     return (
         <div className="flex flex-wrap justify-center gap-6 p-4">
             {userData.map(user => (
@@ -49,4 +39,5 @@ const Card = () => {
     );
 };
 
-export default Card;
+
+export default Card
